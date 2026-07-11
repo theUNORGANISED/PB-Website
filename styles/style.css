@@ -176,22 +176,28 @@ a {
   justify-content: center;
 }
 
-/* Placeholder for a real photo. Replace the .image-placeholder div with an <img> once one is ready. */
-.image-placeholder {
+.hero-image img,
+.split-image img {
   width: 100%;
-  aspect-ratio: 4 / 5;
   border-radius: 28px;
-  background: linear-gradient(135deg, var(--lavender), var(--lime-cream));
-  border: 2px dashed rgba(10, 0, 41, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dark-amethyst);
-  font-weight: 500;
+  object-fit: cover;
+  display: block;
 }
 
-.split-section .image-placeholder {
+.hero-image img {
+  aspect-ratio: 4 / 5;
+}
+
+.split-image img {
   aspect-ratio: 1 / 1;
+}
+
+.split-image img.collage-image {
+  aspect-ratio: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 /* Sections */
@@ -248,12 +254,29 @@ a {
 }
 
 .section-band .wrap {
-  max-width: 700px;
   position: relative;
 }
 
 .section-band h2 {
   margin-bottom: 20px;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.reason h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 .quote-mark {
@@ -330,11 +353,25 @@ a {
   margin-bottom: 16px;
 }
 
-/* Contact form */
+/* Contact */
+
+.contact-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h2 {
+  text-align: left;
+}
 
 .contact-form {
-  max-width: 520px;
-  margin: 0 auto;
+  flex: 1;
+  margin: 0;
   display: flex;
   flex-direction: column;
   background: var(--white);
@@ -444,6 +481,24 @@ a {
 
   .quote-mark {
     font-size: 4rem;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contact-text h2 {
+    text-align: center;
+  }
+
+  .contact-text p {
+    text-align: center;
   }
 
   .site-nav {
