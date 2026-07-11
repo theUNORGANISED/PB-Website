@@ -226,6 +226,22 @@ a {
   background: var(--lavender-mist);
 }
 
+.section-lavender {
+  background: var(--lavender);
+}
+
+#about {
+  padding-bottom: 0;
+}
+
+#about .split-section {
+  align-items: flex-end;
+}
+
+#about .split-image {
+  flex: 1.3;
+}
+
 .split-section {
   display: flex;
   align-items: center;
