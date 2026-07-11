@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saskia Kordic, Business Bestie</title>
+  <meta name="description" content="Business Audit und Mentoring Sessions mit Saskia Kordic, deiner Business Bestie. Kein klassisches Coaching, sondern Sparring auf Augenhöhe.">
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo-link">
+        <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img">
+      </a>
+      <nav class="site-nav">
+        <a href="#angebot">Angebot</a>
+        <a href="#fuer-wen">Für wen</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="top" class="hero">
+      <div class="wrap">
+        <h1>Deine Business Bestie, nicht dein nächster Business Coach.</h1>
+        <p class="hero-sub">Du hast schon alles, was du brauchst. Ich bin da, um dich zur Verantwortung zu ziehen, dich zu pushen, wenn es sein muss, und dir zu helfen, die Punkte zu verbinden, die du selbst nicht siehst, wenn du mittendrin in deinem eigenen Business steckst.</p>
+        <a href="#kontakt" class="btn btn-accent">Kontakt aufnehmen</a>
+      </div>
+    </section>
+
+    <section id="angebot" class="section section-light">
+      <div class="wrap">
+        <h2>Was ich anbiete</h2>
+        <p class="section-intro">Zwei Wege, wie wir zusammenarbeiten können.</p>
+        <div class="offer-grid">
+          <article class="offer-card">
+            <h3>Business Audit</h3>
+            <p class="price">300 €</p>
+            <p>Ich schaue mir deine Social Accounts, deine Angebote, deine Website an, alles, was gerade da ist, und sage dir ehrlich, was funktioniert und was nicht. Du bekommst eine 1-2-stündige Session, in der wir das live durchgehen, plus ein PDF zum Behalten.</p>
+          </article>
+          <article class="offer-card">
+            <h3>Mentoring Sessions</h3>
+            <p class="price">100 € / Stunde</p>
+            <p>Laufende 1:1 Arbeit. Manche Sessions sind Strategie, manche sind Arbeit an dem, was dich innerlich gerade blockiert. Kein Menü zum Aussuchen, wir gehen dahin, wo dein Business es gerade braucht.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-band">
+      <div class="wrap">
+        <h2>Warum kein klassisches Coaching</h2>
+        <p>Ich werde dir nicht sagen, was du tun sollst. Das macht klassisches Coaching, und es funktioniert nicht. Du hast schon, was du brauchst, du musst nur wieder geerdet werden und es reflektiert bekommen, damit du es klar siehst. Sparringspartnerin statt Anweisungen, Impulse statt Vorgaben.</p>
+      </div>
+    </section>
+
+    <section id="fuer-wen" class="section section-light">
+      <div class="wrap">
+        <h2>Für wen das hier ist</h2>
+        <p>Das hier ist für dich, wenn du zwischen Angeboten hin und her springst, die nicht zusammen ein Ganzes ergeben. Wenn du dein Handwerk kennst, aber die Teile nicht zu einem System zusammenbekommst, das läuft. Wenn du viel machst und trotzdem nichts hängen bleibt, weil dir nicht mehr Aufwand fehlt, sondern die Verbindung.</p>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <p class="core-belief">Dein Business läuft nur so rund, wie du innerlich rund läufst.</p>
+        <p class="core-belief-sub">Das ist der Satz, zu dem ich bei jedem Klienten wieder zurückkomme.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section section-light">
+      <div class="wrap">
+        <h2>Wie du startest</h2>
+        <p class="section-intro">Nicht sicher, wo du anfangen sollst? Buch das Audit, das ist der klarste erste Schritt. Weißt du schon, dass du laufende Unterstützung willst? Meld dich direkt wegen der Mentoring Sessions.</p>
+
+        <!--
+          Contact form UI only. Not yet wired to send anywhere.
+          Needs a form backend (e.g. Formspree, Netlify Forms) or a mailto fallback
+          once Saskia decides how she wants to receive messages.
+        -->
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="interesse">Interesse</label>
+          <select id="interesse" name="interesse">
+            <option value="audit">Business Audit</option>
+            <option value="mentoring">Mentoring Sessions</option>
+            <option value="unsicher">Noch nicht sicher</option>
+          </select>
+
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-accent">Nachricht senden</button>
+          <p class="form-note" id="form-note">Dieses Formular ist noch nicht mit einer E-Mail-Adresse verbunden.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img logo-img-small">
+      <p>&copy; <span id="year"></span> Saskia Kordic</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-note').textContent = 'Formular noch nicht aktiv. Bitte schreib mir direkt eine E-Mail, bis das hier eingerichtet ist.';
+    });
+  </script>
+
+</body>
+</html>

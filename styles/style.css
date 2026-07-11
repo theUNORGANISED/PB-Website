@@ -1,0 +1,312 @@
+:root {
+  --frosted-mint: #EDFFD6;
+  --lime-cream: #D8FFA4;
+  --dark-amethyst: #0A0029;
+  --lavender: #EFEAFF;
+  --lavender-mist: #F6F3FF;
+  --white: #FDFDFF;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--dark-amethyst);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--lavender);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.logo-img-small {
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.btn-accent {
+  background: var(--lime-cream);
+  color: var(--dark-amethyst);
+}
+
+.btn-accent:hover {
+  background: var(--frosted-mint);
+}
+
+/* Hero */
+
+.hero {
+  background: var(--dark-amethyst);
+  color: var(--white);
+  padding: 100px 0 90px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-sub {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-size: 1.1rem;
+  color: var(--lavender-mist);
+}
+
+/* Sections */
+
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1.05rem;
+}
+
+.section-light {
+  background: var(--white);
+}
+
+.section-band {
+  background: var(--lavender);
+  text-align: center;
+}
+
+.section-band .wrap {
+  max-width: 700px;
+}
+
+.section-band h2 {
+  margin-bottom: 20px;
+}
+
+.section-dark {
+  background: var(--dark-amethyst);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.core-belief {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  max-width: 640px;
+  margin: 0 auto 12px;
+}
+
+.core-belief-sub {
+  color: var(--lavender-mist);
+  font-size: 1rem;
+}
+
+/* Offer cards */
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.offer-card {
+  background: var(--lavender-mist);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.offer-card h3 {
+  font-size: 1.4rem;
+}
+
+.offer-card .price {
+  font-weight: 600;
+  color: var(--dark-amethyst);
+  background: var(--lime-cream);
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* Contact form */
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--lavender-mist);
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--lavender);
+  background: var(--white);
+  color: var(--dark-amethyst);
+}
+
+.contact-form button {
+  margin-top: 24px;
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: #5a5470;
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Footer */
+
+.site-footer {
+  background: var(--dark-amethyst);
+  color: var(--lavender-mist);
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 70px 0 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    gap: 16px;
+  }
+
+  .site-nav a {
+    font-size: 0.85rem;
+  }
+}
