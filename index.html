@@ -19,9 +19,9 @@
         <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img">
       </a>
       <nav class="site-nav">
-        <a href="#angebot">Angebot</a>
-        <a href="#fuer-wen">Für wen</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#offer">Angebot</a>
+        <a href="#target-audience">Für wen</a>
+        <a href="#contact">Kontakt</a>
       </nav>
     </div>
   </header>
@@ -29,14 +29,22 @@
   <main>
 
     <section id="top" class="hero">
-      <div class="wrap">
-        <h1>Deine Business Bestie, nicht dein nächster Business Coach.</h1>
-        <p class="hero-sub">Du hast schon alles, was du brauchst. Ich bin da, um dich zur Verantwortung zu ziehen, dich zu pushen, wenn es sein muss, und dir zu helfen, die Punkte zu verbinden, die du selbst nicht siehst, wenn du mittendrin in deinem eigenen Business steckst.</p>
-        <a href="#kontakt" class="btn btn-accent">Kontakt aufnehmen</a>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Deine Business Bestie, nicht dein nächster Business Coach.</h1>
+          <p class="hero-sub">Du hast schon alles, was du brauchst. Ich bin da, um dich zur Verantwortung zu ziehen, dich zu pushen, wenn es sein muss, und dir zu helfen, die Punkte zu verbinden, die du selbst nicht siehst, wenn du mittendrin in deinem eigenen Business steckst.</p>
+          <a href="#contact" class="btn btn-accent">Kontakt aufnehmen</a>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder for a photo of Saskia. Swap this div for a real <img> when ready. Recommended: portrait orientation, at least 800px wide. -->
+          <div class="image-placeholder" role="img" aria-label="Platzhalter für ein Foto von Saskia">
+            <span>Foto folgt</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="angebot" class="section section-light">
+    <section id="offer" class="section section-light">
       <div class="wrap">
         <h2>Was ich anbiete</h2>
         <p class="section-intro">Zwei Wege, wie wir zusammenarbeiten können.</p>
@@ -62,10 +70,18 @@
       </div>
     </section>
 
-    <section id="fuer-wen" class="section section-light">
-      <div class="wrap">
-        <h2>Für wen das hier ist</h2>
-        <p>Das hier ist für dich, wenn du zwischen Angeboten hin und her springst, die nicht zusammen ein Ganzes ergeben. Wenn du dein Handwerk kennst, aber die Teile nicht zu einem System zusammenbekommst, das läuft. Wenn du viel machst und trotzdem nichts hängen bleibt, weil dir nicht mehr Aufwand fehlt, sondern die Verbindung.</p>
+    <section id="target-audience" class="section section-light">
+      <div class="wrap split-section">
+        <div class="split-text">
+          <h2>Für wen das hier ist</h2>
+          <p>Das hier ist für dich, wenn du zwischen Angeboten hin und her springst, die nicht zusammen ein Ganzes ergeben. Wenn du dein Handwerk kennst, aber die Teile nicht zu einem System zusammenbekommst, das läuft. Wenn du viel machst und trotzdem nichts hängen bleibt, weil dir nicht mehr Aufwand fehlt, sondern die Verbindung.</p>
+        </div>
+        <div class="split-image">
+          <!-- Placeholder for a relevant photo. Swap this div for a real <img> when ready. Recommended: square, at least 800px wide. -->
+          <div class="image-placeholder" role="img" aria-label="Platzhalter für ein Foto">
+            <span>Foto folgt</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -76,7 +92,7 @@
       </div>
     </section>
 
-    <section id="kontakt" class="section section-light">
+    <section id="contact" class="section section-light">
       <div class="wrap">
         <h2>Wie du startest</h2>
         <p class="section-intro">Nicht sicher, wo du anfangen sollst? Buch das Audit, das ist der klarste erste Schritt. Weißt du schon, dass du laufende Unterstützung willst? Meld dich direkt wegen der Mentoring Sessions.</p>
@@ -93,15 +109,15 @@
           <label for="email">E-Mail</label>
           <input type="email" id="email" name="email" required>
 
-          <label for="interesse">Interesse</label>
-          <select id="interesse" name="interesse">
+          <label for="interest">Interesse</label>
+          <select id="interest" name="interest">
             <option value="audit">Business Audit</option>
             <option value="mentoring">Mentoring Sessions</option>
-            <option value="unsicher">Noch nicht sicher</option>
+            <option value="unsure">Noch nicht sicher</option>
           </select>
 
-          <label for="nachricht">Nachricht</label>
-          <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
           <button type="submit" class="btn btn-accent">Nachricht senden</button>
           <p class="form-note" id="form-note">Dieses Formular ist noch nicht mit einer E-Mail-Adresse verbunden.</p>

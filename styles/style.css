@@ -121,21 +121,50 @@ a {
   background: var(--dark-amethyst);
   color: var(--white);
   padding: 100px 0 90px;
-  text-align: center;
 }
 
-.hero h1 {
+.hero-grid {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
   font-size: 2.6rem;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-sub {
-  max-width: 600px;
-  margin: 0 auto 32px;
   font-size: 1.1rem;
   color: var(--lavender-mist);
+  margin-bottom: 32px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Placeholder for a real photo. Replace the .image-placeholder div with an <img> once one is ready. */
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--lavender), var(--lime-cream));
+  border: 2px dashed rgba(10, 0, 41, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-amethyst);
+  font-weight: 500;
+}
+
+.split-section .image-placeholder {
+  aspect-ratio: 1 / 1;
 }
 
 /* Sections */
@@ -158,6 +187,26 @@ a {
 
 .section-light {
   background: var(--white);
+}
+
+.split-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.split-text {
+  flex: 1;
+}
+
+.split-text h2 {
+  text-align: left;
+}
+
+.split-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .section-band {
@@ -290,8 +339,19 @@ a {
     padding: 70px 0 60px;
   }
 
-  .hero h1 {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .hero-text h1 {
     font-size: 2rem;
+  }
+
+  .hero-image {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .section {
@@ -300,6 +360,20 @@ a {
 
   .offer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .split-section {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .split-text h2 {
+    text-align: center;
+  }
+
+  .split-image {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .site-nav {
