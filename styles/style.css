@@ -517,11 +517,15 @@ background-color: var(--blush);
 
 .cta-section {
   display: flex;
-  min-height: 560px;
+  height: 100vh;
+  min-height: 420px;
+  max-height: 900px;
+  overflow: hidden;
 }
 
 .cta-photo {
   flex: 1;
+  min-height: 0;
 }
 
 .cta-photo img {
@@ -533,6 +537,8 @@ background-color: var(--blush);
 
 .cta-panel {
   flex: 1;
+  min-height: 0;
+  overflow: hidden;
   background: var(--black);
   color: var(--white);
   display: flex;
