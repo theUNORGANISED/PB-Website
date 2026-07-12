@@ -143,11 +143,15 @@ background-color: var(--white);
 
 .hero {
   display: flex;
-  min-height: 640px;
+  height: calc(100vh - 124px);
+  min-height: 420px;
+  max-height: 900px;
+  overflow: hidden;
 }
 
 .hero-photo {
   flex: 1;
+  min-height: 0;
 }
 
 .hero-photo img {
@@ -159,7 +163,8 @@ background-color: var(--white);
 
 .hero-content {
   flex: 1;
-
+  min-height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
