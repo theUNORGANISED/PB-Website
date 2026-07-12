@@ -46,7 +46,7 @@ a {
 }
 
 .wrap {
-  max-width: 960px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -240,7 +240,11 @@ background-color: var(--blush);
 
 .section h2 {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
+}
+
+.section h2.border {
+  border-bottom: 1px solid #000;
 }
 
 .section-intro {
