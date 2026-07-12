@@ -1,10 +1,10 @@
 :root {
-  --porcelain: #FEFBF6;
+  --porcelain: #FAF9F7;
   --blush: #FDF0F5;
   --rose: #F8C9DB;
   --black: #000000;
   --white: #FFFFFF;
-
+--greige: #F3F2EE;
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Poppins', sans-serif;
 }
@@ -50,7 +50,7 @@ a {
 /* Header */
 
 .site-header {
-  background: var(--porcelain);
+
   position: sticky;
   top: 0;
   z-index: 10;
@@ -155,7 +155,7 @@ a {
 
 .hero-content {
   flex: 1;
-  background: var(--porcelain);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,7 +179,7 @@ a {
 /* Marquee */
 
 .marquee {
-  background: var(--porcelain);
+
   color: var(--black);
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
@@ -291,7 +291,7 @@ a {
 }
 
 .section-band {
-  background: var(--porcelain);
+
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -353,7 +353,7 @@ a {
 /* Testimonials */
 
 .testimonial-section {
-  background: var(--porcelain);
+
   color: var(--black);
   padding: 100px 0;
   text-align: center;
@@ -393,7 +393,7 @@ a {
 /* Offer */
 
 .offer-section {
-  background: var(--porcelain);
+
   padding: 80px 0;
 }
 
@@ -509,7 +509,7 @@ a {
 /* Contact */
 
 .contact-section {
-  background: var(--porcelain);
+background-color:  var(--porcelain);
   color: var(--black);
   padding: 100px 0;
 }
@@ -582,7 +582,7 @@ a {
 /* Footer */
 
 .site-footer {
-  background: var(--porcelain);
+  background: var(--rose);
   color: var(--black);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 32px 0;
