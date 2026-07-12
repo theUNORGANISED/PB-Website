@@ -1,9 +1,10 @@
 :root {
-  --porcelain: #FAF9F7;
+  --porcelain: #f7f7f7;
   --blush: #FDF0F5;
   --rose: #F8C9DB;
   --black: #000000;
   --white: #FFFFFF;
+  --dark: #240511;
 --greige: #F3F2EE;
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Poppins', sans-serif;
@@ -32,6 +33,9 @@ h1, h2, h3 {
   line-height: 1.15;
   margin: 0 0 1rem;
 }
+h2 {
+  font-size: 30px;
+}
 
 p {
   margin: 0 0 1rem;
@@ -50,7 +54,7 @@ a {
 /* Header */
 
 .site-header {
-
+background-color: var(--white);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -72,7 +76,7 @@ a {
 }
 
 .logo-img {
-  height: 48px;
+  height: 100px;
   width: auto;
   display: block;
 }
@@ -179,7 +183,7 @@ a {
 /* Marquee */
 
 .marquee {
-
+background-color: var(--blush);
   color: var(--black);
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
@@ -348,6 +352,42 @@ a {
   color: var(--black);
   opacity: 0.15;
   margin-bottom: -20px;
+}
+
+/* Mission */
+
+.mission-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.mission-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+}
+
+.mission-quote {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  max-width: 780px;
+  margin: 0 auto 32px;
+}
+
+.mission-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 4px;
 }
 
 /* Testimonials */
@@ -714,6 +754,14 @@ background-color:  var(--porcelain);
 
   .quote-mark {
     font-size: 4rem;
+  }
+
+  .mission-section {
+    padding: 64px 0;
+  }
+
+  .mission-quote {
+    font-size: 1.4rem;
   }
 
   .reasons-grid {
