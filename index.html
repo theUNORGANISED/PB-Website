@@ -8,74 +8,74 @@
   <link rel="icon" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="#top" class="logo-link">
+      <a href="index.html#top" class="logo-link">
         <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img">
       </a>
-      <nav class="site-nav">
-        <a href="#about">Über mich</a>
-        <a href="#offer">Angebot</a>
-        <a href="#target-audience">Für wen</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
+      <div class="header-right">
+        <nav class="site-nav">
+          <a href="index.html#about">Über mich</a>
+          <a href="index.html#offer">Angebot</a>
+          <a href="index.html#target-audience">Für wen</a>
+        </nav>
+        <a href="index.html#contact" class="btn btn-nav">Kontakt</a>
+      </div>
     </div>
   </header>
 
   <main>
 
     <section id="top" class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <h1>Deine Business Bestie, nicht dein nächster Business Coach.</h1>
-          <p class="hero-sub">Du hast schon alles, was du brauchst. Ich bin da, um dich zur Verantwortung zu ziehen, dich zu pushen, wenn es sein muss, und dir zu helfen, die Punkte zu verbinden, die du selbst nicht siehst, wenn du mittendrin in deinem eigenen Business steckst.</p>
-          <a href="#contact" class="btn btn-dark">Kontakt aufnehmen</a>
-        </div>
-        <div class="hero-image">
-          <img src="assets/images/me.jpg" alt="Saskia Kordic">
-        </div>
+      <div class="hero-photo">
+        <img src="assets/images/mstock3.jpg" alt="office">
+      </div>
+      <div class="hero-content">
+        <h1>Deine Business Bestie, nicht dein nächster Business Coach.</h1>
+        <p class="hero-sub">Du hast schon alles, was du brauchst. Ich bin da, um dich zur Verantwortung zu ziehen, dich zu pushen, wenn es sein muss, und dir zu helfen, die Punkte zu verbinden, die du selbst nicht siehst, wenn du mittendrin in deinem eigenen Business steckst.</p>
+        <a href="#contact" class="btn">Kontakt aufnehmen</a>
       </div>
     </section>
 
-    <section id="offer" class="section section-tint">
-      <div class="wrap">
-        <h2>Was ich anbiete</h2>
-        <p class="section-intro">Zwei Wege, wie wir zusammenarbeiten können.</p>
-        <div class="offer-grid">
-          <article class="offer-card">
-            <h3>Business Audit</h3>
-            <p class="price">300 €</p>
-            <p>Ich schaue mir deine Social Accounts, deine Angebote, deine Website an, alles, was gerade da ist, und sage dir ehrlich, was funktioniert und was nicht. Du bekommst eine 1-2-stündige Session, in der wir das live durchgehen, plus ein PDF zum Behalten.</p>
-          </article>
-          <article class="offer-card">
-            <h3>Mentoring Sessions</h3>
-            <p class="price">100 € / Stunde</p>
-            <p>Laufende 1:1 Arbeit. Manche Sessions sind Strategie, manche sind Arbeit an dem, was dich innerlich gerade blockiert. Kein Menü zum Aussuchen, wir gehen dahin, wo dein Business es gerade braucht.</p>
-          </article>
-        </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
+        <span>Jetzt starten</span>
       </div>
-    </section>
+    </div>
 
     <section class="section section-band">
       <div class="wrap">
-        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
         <h2>Warum kein klassisches Coaching</h2>
         <!-- The three reasons below are the existing positioning paragraph split into columns, not new claims. -->
         <div class="reasons-grid">
           <div class="reason">
+            <span class="reason-number">01</span>
             <h3>Du hast die Antworten schon in dir</h3>
             <p>Du brauchst niemanden, der dir sagt, was du tun sollst. Du brauchst jemanden, der dich daran erinnert, was du schon weißt.</p>
           </div>
           <div class="reason">
+            <span class="reason-number">02</span>
             <h3>Sparring statt Anweisungen</h3>
             <p>Ich bin nicht da, um dir Vorgaben zu machen. Ich bin da, um mit dir zu denken, zu spiegeln und ehrlich zu sagen, was ich sehe.</p>
           </div>
           <div class="reason">
+            <span class="reason-number">03</span>
             <h3>Es fehlt dir nicht an Wissen</h3>
             <p>Die meisten verlieren sich nicht durch zu wenig Information, sondern durch zu viel Rauschen und zu wenig Vertrauen in die eigenen Entscheidungen.</p>
           </div>
@@ -83,40 +83,95 @@
       </div>
     </section>
 
-    <section id="target-audience" class="section section-light">
-      <div class="wrap split-section">
-        <div class="split-text">
-          <h2>Für wen das hier ist</h2>
-          <p>Das hier ist für dich, wenn du zwischen Angeboten hin und her springst, die nicht zusammen ein Ganzes ergeben. Wenn du dein Handwerk kennst, aber die Teile nicht zu einem System zusammenbekommst, das läuft. Wenn du viel machst und trotzdem nichts hängen bleibt, weil dir nicht mehr Aufwand fehlt, sondern die Verbindung.</p>
-        </div>
-        <div class="split-image">
-          <img src="assets/images/stock2.jpg" alt="Journaling und Reflexion am Schreibtisch">
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="wrap">
-        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-        <p class="core-belief">Dein Business läuft nur so rund, wie du innerlich rund läufst.</p>
-        <p class="core-belief-sub">Das ist der Satz, zu dem ich bei jedem Klienten wieder zurückkomme.</p>
-      </div>
-    </section>
-
     <section id="about" class="section section-lavender">
       <div class="wrap split-section">
-        <div class="split-image">
-          <img src="assets/images/website.png" alt="Saskia Kordic mit Notizen: liebt es Neues zu lernen, würde am liebsten 10 Unternehmen gründen, spricht stundenlang über Identität" class="collage-image">
-        </div>
         <div class="split-text">
           <h2>Über mich</h2>
           <!-- Drafted bio, not pulled verbatim from the brain files. Confirm wording with Saskia. -->
           <p>Ich bin Saskia. Ich habe Online Media studiert und rund ein Jahr als Social Media Managerin gearbeitet, bevor ich angefangen habe, Unternehmerinnen 1:1 zu begleiten. Ich glaube nicht an vorgefertigte Formeln. Ich glaube daran, dass du die Antworten schon in dir hast, und dass es manchmal einfach jemanden braucht, der dich daran erinnert.</p>
+          <a href="#offer" class="btn btn-outline">Mehr erfahren</a>
+        </div>
+        <div class="split-image">
+          <img src="assets/images/website.png" alt="Saskia Kordic mit Notizen: liebt es Neues zu lernen, würde am liebsten 10 Unternehmen gründen, spricht stundenlang über Identität" class="collage-image">
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section-tint">
+    <section id="target-audience" class="section section-light">
+      <div class="wrap split-section">
+        <div class="split-image">
+          <img src="assets/images/stock2.jpg" alt="Journaling und Reflexion am Schreibtisch">
+        </div>
+        <div class="split-text">
+          <h2>Für wen das hier ist</h2>
+          <p>Das hier ist für dich, wenn du zwischen Angeboten hin und her springst, die nicht zusammen ein Ganzes ergeben. Wenn du dein Handwerk kennst, aber die Teile nicht zu einem System zusammenbekommst, das läuft. Wenn du viel machst und trotzdem nichts hängen bleibt, weil dir nicht mehr Aufwand fehlt, sondern die Verbindung.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonial-section">
+      <div class="wrap">
+        <h2>Was Kundinnen sagen</h2>
+        <!-- PLACEHOLDER testimonials. Replace both quotes and names with real client testimonials before launch. -->
+        <div class="testimonial-columns">
+          <blockquote class="testimonial-item">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>[Platzhalter] Hier steht bald eine echte Kundenstimme.</p>
+            <footer>Platzhalter-Name, Platzhalter-Rolle</footer>
+          </blockquote>
+          <blockquote class="testimonial-item">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>[Platzhalter] Hier steht die zweite echte Kundenstimme.</p>
+            <footer>Platzhalter-Name, Platzhalter-Rolle</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer" class="offer-section">
+      <div class="wrap">
+        <h2>Was ich anbiete</h2>
+      </div>
+      <div class="offer-panels">
+        <div class="offer-photo">
+          <img src="assets/images/stock1.jpg" alt="Notizbuch und Kaffee">
+        </div>
+        <article class="offer-panel offer-panel-a">
+          <div>
+            <h3>Business Audit</h3>
+            <p>Ich schaue mir deine Social Accounts, deine Angebote, deine Website an, alles, was gerade da ist, und sage dir ehrlich, was funktioniert und was nicht. Du bekommst eine 1-2-stündige Session, in der wir das live durchgehen, plus ein PDF zum Behalten.</p>
+          </div>
+          <div>
+            <span class="offer-price">300 €</span>
+            <a href="#contact" class="offer-link">Mehr erfahren &rarr;</a>
+          </div>
+        </article>
+        <article class="offer-panel offer-panel-b">
+          <div>
+            <h3>Mentoring Sessions</h3>
+            <p>Laufende 1:1 Arbeit. Manche Sessions sind Strategie, manche sind Arbeit an dem, was dich innerlich gerade blockiert. Kein Menü zum Aussuchen, wir gehen dahin, wo dein Business es gerade braucht.</p>
+          </div>
+          <div>
+            <span class="offer-price">100 € / Stunde</span>
+            <a href="#contact" class="offer-link">Mehr erfahren &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+      <div class="cta-photo">
+        <img src="assets/images/me1.jpg" alt="Saskia Kordic">
+      </div>
+      <div class="cta-panel">
+        <!-- Drafted copy, not pulled verbatim from the brain files. Confirm wording with Saskia. -->
+        <h2>Bereit, deinen nächsten Schritt zu gehen?</h2>
+        <p>Dein nächstes Kapitel ist nur ein Gespräch entfernt. Meld dich, und lass uns gemeinsam schauen, was für dich möglich ist.</p>
+        <a href="#contact" class="btn">Kontakt aufnehmen</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
       <div class="wrap contact-grid">
         <div class="contact-text">
           <h2>Wie du startest</h2>
@@ -128,11 +183,11 @@
           Needs a form backend (e.g. Formspree, Netlify Forms) or a mailto fallback
           once Saskia decides how she wants to receive messages.
         -->
-        <form class="contact-form" id="contact-form">
-          <label for="name">Name</label>
+        <form class="contact-form-v2" id="contact-form">
+          <label for="name">Name <span class="required-tag">(erforderlich)</span></label>
           <input type="text" id="name" name="name" required>
 
-          <label for="email">E-Mail</label>
+          <label for="email">E-Mail <span class="required-tag">(erforderlich)</span></label>
           <input type="email" id="email" name="email" required>
 
           <label for="interest">Interesse</label>
@@ -143,9 +198,9 @@
           </select>
 
           <label for="message">Nachricht</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit" class="btn btn-accent">Nachricht senden</button>
+          <button type="submit" class="btn">Nachricht senden</button>
           <p class="form-note" id="form-note">Dieses Formular ist noch nicht mit einer E-Mail-Adresse verbunden.</p>
         </form>
       </div>
@@ -155,19 +210,29 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img logo-img-small">
-      <p>&copy; <span id="year"></span> Saskia Kordic</p>
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Saskia Kordic" class="logo-img logo-img-small">
+        <p>&copy; <span id="year"></span> Saskia Kordic</p>
+      </div>
+
+      <nav class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+
+      <!-- TODO: replace with Saskia's real Instagram URL and email address before launch. -->
+      <div class="footer-social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="mailto:hallo@saskiakordic.de" aria-label="E-Mail">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      document.getElementById('form-note').textContent = 'Formular noch nicht aktiv. Bitte schreib mir direkt eine E-Mail, bis das hier eingerichtet ist.';
-    });
-  </script>
+  <script src="scripts/main.js"></script>
 
 </body>
 </html>
