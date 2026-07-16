@@ -8,6 +8,7 @@
 --greige: #F3F2EE;
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Poppins', sans-serif;
+  --size-body: 1.1rem;
 }
 
 * {
@@ -22,6 +23,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-weight: 400;
+  font-size: var(--size-body);
   color: var(--black);
   background: var(--white);
   line-height: 1.6;
@@ -184,7 +186,7 @@ background-color: var(--white);
 }
 
 .hero-sub {
-  font-size: 1.1rem;
+  font-size: var(--size-body);
   color: rgba(0, 0, 0, 0.72);
   margin-bottom: 32px;
 }
